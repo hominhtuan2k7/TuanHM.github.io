@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Hồ Minh Tuấn</title>
+  <style>
+    :root{--accent:#0f6f79;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:#f6f7f8; color:#0b2530}
+    header{background:var(--accent); color:#fff; padding:28px 20px}
+    .container{max-width:1100px; margin:28px auto; padding:20px}
+    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:20px}
+    .card{background:#fff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(11,37,48,0.06); display:flex; gap:16px; align-items:center}
+    .thumb{width:96px; height:96px; border-radius:8px; background:linear-gradient(135deg,#e6f7f6,#eaf4f7); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--accent);}
+    h1{margin:0; font-size:22px}
+    p.lead{color:var(--muted); margin:8px 0 0}
+    .actions{margin-left:auto}
+    a.btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none}
+    footer{max-width:1100px; margin:0 auto; padding:20px; color:var(--muted); text-align:center}
+    @media (max-width:760px){.grid{grid-template-columns:1fr}.actions{margin-left:0; margin-top:10px;}}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hồ Minh Tuấn</h1>
+      <p style="margin:6px 0 0; color:rgba(255,255,255,0.9)">Trang điều hướng giữa các trang HTML (CV & Hồ cá)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <article class="card">
+        <div class="thumb">CV</div>
+        <div>
+          <h2>Curriculum Vitae (CV)</h2>
+          <p class="lead">Trang CV cá nhân của tôi</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="cv.html" target="_blank" rel="noopener">Mở CV</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">HỒ</div>
+        <div>
+          <h2>Hồ cá (Fish Tank)</h2>
+          <p class="lead">hồ cá của tôi</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="hoca.html" target="_blank" rel="noopener">Mở Hồ cá</a>
+        </div>
+      </article>
+    </div>
+
+    
+  </main>
+</body>
+</html>
